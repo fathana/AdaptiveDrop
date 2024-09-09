@@ -14,7 +14,8 @@ In Table 5, we show a comparison study of our four main losses used to train our
 ![](/AdaptiveDrop_versus_without_all_pseudo_labels.png)
 
 # Noisy labels correction
-Table 6 shows the final label unsupervised clustering accuracy across all our different pseudo-labels. results show that AdaptiveDrop helps to enhance the label accuracy across all the pseudo-labels used: ![](/Label_accuracy_all_pseudo_labels.png)
+Table 6 shows the final label unsupervised clustering accuracy across all our different pseudo-labels. Using unsupervised clustering accuracy (ACC) to measure the consistency between the ground-truth labels
+and the initial clustering-driven PLs or the final rectified PLs. We can observe that improvements thanks to our label correction module vary depending on the type of PLs used to train the network, and that AdaptiveDrop helps to enhance label accuracy across all the pseudo-labels. For instance, we got up to 9% improvement in ACC after training completed in case of the GMM-based PLs. This is equivalent to more than 98,280 successfuly corrected noisy samples in the VoxCeleb2 dataset, which shows that label correction can be tremendously beneficial to boost SV performance and speaker clustering: ![](/Label_accuracy_all_pseudo_labels.png)
 
 # AdaptiveDrop: Evaluation on other datasets.
 Table 8 shows the evaluation of our SV model trained using different losses with/without AdaptiveDrop. For evaluation, we use the 3 Voxceleb1 evaluation sets: Vox1-O, Vox1-E, and Vox1-H. ![](/AdaptiveDrop_evaluation_other_datasets.png)
