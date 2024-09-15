@@ -1,8 +1,6 @@
 # AdaptiveDrop
 
-This repository is for our paper currently under review.
-
-Code of our experiments will be available upon acceptance of our paper. We also include below additional ablation studies for our proposed AdaptiveDrop filtering framework.
+This repository is for our paper currently under review. The code of our experiments will be available upon acceptance of our paper. We also include below additional ablation studies for our proposed AdaptiveDrop filtering framework.
 
 # AdaptiveDrop: metrics over epochs
 In Figure 3, we show the evolution of several metrics over epochs using AdaptiveDrop versus only using the loss functions. Here we use CAMSAT-based pseudo-labels.
